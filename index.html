@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Instagram</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid d-flex justify-content-sm-between">
+                <a class="navbar-brand" href="#">
+                    <img src="https://img.freepik.com/vector-premium/logo-instagram_976174-11.jpg?semt=ais_hybrid"
+                        alt="" width="30" height="24" class="d-inline-block align-text-top">
+                    Instagram
+                </a>
+                <div class ="prueba d-flex justify-content-sm-between">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-success me-5" data-bs-toggle="modal" data-bs-target="#createPost">
+                    Create a new post
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade " id="createPost" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <h5>Caption:</h5>
+                              <div class="form-floating">
+                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                                <label for="floatingTextarea2">Add the caption of your post here</label>
+                              </div>
+                              <img src="https://media.istockphoto.com/id/1440837734/es/vector/d%C3%ADa-mundial-de-la-fotograf%C3%ADa-icono-del-%C3%A1lbum-de-fotos-icono-negro-de-la-c%C3%A1mara-de-fotograf%C3%ADa.jpg?s=612x612&w=0&k=20&c=PvglSPIDWCXPF0KiWOPr2TPcYbTWVeUL3lmhhTwO1Qc="
+                        alt="" width="30" height="24" class="d-inline-block align-text-top">
+                        <img src="https://cdn-icons-png.flaticon.com/512/535/535188.png"
+                        alt="" width="30" height="24" class="d-inline-block align-text-top">
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-success">Publish</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown me-5 p-2">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="https://cdn-icons-png.flaticon.com/512/6063/6063673.png"
+                        alt="" width="30" height="24" class="d-inline-block align-text-top">
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Profile</a></li>
+                      <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                      <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item text-danger"  href="#"> Log out</a></li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+        </nav>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>
