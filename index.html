@@ -11,151 +11,145 @@
 </head>
 
 <body>
-   
-    <style>
-        .nav-pill .nav-link{
-            color: grey;
-        }
-        .nav-pill .nav-link.active{
-            color: blue;
-        }
-    </style>
-        <nav class="navbar navbar-light bg-light p-3">
-            <div class="container-fluid d-flex justify-content-sm-between">
-                <a class="navbar-brand" href="#">
-                    <img src="https://img.freepik.com/vector-premium/logo-instagram_976174-11.jpg?semt=ais_hybrid"
-                        alt="" width="30" height="24" class="d-inline-block align-text-top">
-                    <span>Instagram</span>
-                </a>
-                <div class="prueba d-flex justify-content-sm-between">
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-success me-5" data-bs-toggle="modal"
-                        data-bs-target="#createPost">
-                        Create a new post
+
+    <nav class="navbar navbar-light bg-light p-3">
+        <div class="container-fluid d-flex justify-content-sm-between">
+            <a class="navbar-brand" href="#">
+                <img src="https://img.freepik.com/vector-premium/logo-instagram_976174-11.jpg?semt=ais_hybrid" alt=""
+                    width="30" height="24" class="d-inline-block align-text-top">
+                <span>Instagram</span>
+            </a>
+            <div class="prueba d-flex justify-content-sm-between">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-success me-5" data-bs-toggle="modal" data-bs-target="#createPost">
+                    Create a new post
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade " m-1 id="createPost" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body m-1">
+                                <h5>Caption:</h5>
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Leave a comment here"
+                                        id="floatingTextarea2" style="height: 100px"></textarea>
+                                    <label for="floatingTextarea2">Add the caption of your post here</label>
+                                </div>
+                                <img src="https://media.istockphoto.com/id/1440837734/es/vector/d%C3%ADa-mundial-de-la-fotograf%C3%ADa-icono-del-%C3%A1lbum-de-fotos-icono-negro-de-la-c%C3%A1mara-de-fotograf%C3%ADa.jpg?s=612x612&w=0&k=20&c=PvglSPIDWCXPF0KiWOPr2TPcYbTWVeUL3lmhhTwO1Qc="
+                                    alt="" width="30" height="24" class="d-inline-block align-text-top">
+                                <img src="https://cdn-icons-png.flaticon.com/512/535/535188.png" alt="" width="30"
+                                    height="24" class="d-inline-block align-text-top">
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-success">Publish</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown me-5 p-2">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <img src="https://cdn-icons-png.flaticon.com/512/6063/6063673.png" alt="" width="30" height="24"
+                            class="d-inline-block align-text-top">
                     </button>
-
-                    <!-- Modal -->
-                    <div class="modal fade " m-1 id="createPost" tabindex="-1" aria-labelledby="exampleModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body m-1">
-                                    <h5>Caption:</h5>
-                                    <div class="form-floating">
-                                        <textarea class="form-control" placeholder="Leave a comment here"
-                                            id="floatingTextarea2" style="height: 100px"></textarea>
-                                        <label for="floatingTextarea2">Add the caption of your post here</label>
-                                    </div>
-                                    <img src="https://media.istockphoto.com/id/1440837734/es/vector/d%C3%ADa-mundial-de-la-fotograf%C3%ADa-icono-del-%C3%A1lbum-de-fotos-icono-negro-de-la-c%C3%A1mara-de-fotograf%C3%ADa.jpg?s=612x612&w=0&k=20&c=PvglSPIDWCXPF0KiWOPr2TPcYbTWVeUL3lmhhTwO1Qc="
-                                        alt="" width="30" height="24" class="d-inline-block align-text-top">
-                                    <img src="https://cdn-icons-png.flaticon.com/512/535/535188.png" alt="" width="30"
-                                        height="24" class="d-inline-block align-text-top">
-
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-success">Publish</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="dropdown me-5 p-2">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            <img src="https://cdn-icons-png.flaticon.com/512/6063/6063673.png" alt="" width="30"
-                                height="24" class="d-inline-block align-text-top">
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Profile</a></li>
-                            <li><a class="dropdown-item" href="#">Accesibility</a></li>
-                            <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item text-danger" href="#"> Log out</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-        </nav>
-        <div class="container-fluid p-2">
-            <ul class="nav nav-pill justify-content-center" id="tab" role="tablist">
-                <li class="nav-item"  role="presentation">
-                    <a class="nav-link active" id="squares-big" data-bs-toggle="tab" data-bs-target="#square" type="button"
-                    role="tab" aria-controls="home" aria-selected="true"><i
-                        class="fa-solid fa-table-cells"></i></a>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link" id="only-square" data-bs-toggle="tab" data-bs-target="#only" type="button"
-                    role="tab" aria-controls="profile" aria-selected="false"><i class="fa-solid fa-square"></i></a>
-                    
-                </li>
-            </ul>
-            <div class="tab-content" id="myTabContent">
-                <!-- 3 photos per row grid -->
-                <div class="tab-pane fade show active overflow-hidden" id="square" role="tabpanel" aria-labelledby="squares-big">
-
-                    <div class="row">
-                        <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;"
-                                src=""
-                                class="img-fluid w-100" alt=""></div>
-                        <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;"
-                                src=""
-                                class="img-fluid w-100" alt=""></div>
-                        <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;"
-                                src="" class="img-fluid w-100" alt=""></div>
-                    </div>
-                    <div class="row">
-                        <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;"
-                                src=""
-                                class="img-fluid w-100" alt=""></div>
-                        <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;"
-                                src=""
-                                class="img-fluid w-100" alt=""></div>
-                        <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;"
-                                src=""
-                                class="img-fluid w-100" alt=""></div>
-                    </div>
-                    <div class="row">
-                        <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;"
-                                src="" class="img-fluid w-100" alt=""></div>
-                        <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;"
-                                src="" class="img-fluid w-100" alt="">
-                        </div>
-                        <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;"
-                                src=""
-                                class="img-fluid w-100" alt=""></div>
-                    </div>
-                </div>
-                <div class="tab-pane fade overflow-hidden" id="only" role="tabpanel" aria-labelledby="only-square">
-                    <div class="row my-4">
-                        <div class="col-6 mx-auto border rounded p-0">
-                            <div class="d-flex p-2">
-                                <div class="w-100 fs-4">Perro</div>
-                                <small class="align-bottom">03/25</small>
-                            </div>
-                            <img style="object-fit: cover;"
-                                src=""
-                                class="img-fluid w-100 col-12" alt="" />
-                            <div class="p-2">
-                                <strong>like</strong>
-                                <p>Mi perro sonriendo</p>
-                            </div>
-                        </div>
-                    </div>
-                  
-                    
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                        <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item text-danger" href="#"> Log out</a></li>
+                    </ul>
                 </div>
             </div>
-        
-  
+
+        </div>
+    </nav>
+    <div class="container-fluid p-2">
+          <ul class="nav nav-pills justify-content-center id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                <i
+                class="fa-solid fa-table-cells"></i></a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+                <i class="fa-solid fa-square"></i></a>
+            </li>
+           
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <!-- 3 rows
+             3 fotos por row
+             -->
+            <div class="tab-pane fade  overflow-hidden" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <div class="row">
+                    <div class="col-4" p-1>
+                        <!-- responsive class=img-fluid// object-fit-cover que se ajuste sin emborronarse//w-100 aseguro que ocupe el 100% del conteedor-->
+                        <img style="height:30vw; object-fit: cover"; src="https://cdn.sanity.io/images/5vm5yn1d/pro/5cb1f9400891d9da5a4926d7814bd1b89127ecba-1300x867.jpg?fm=webp&q=80" class="img-fluid w-100" alt="Perro">
+                    </div>
+                    <div class="col-4" p-1>
+                        <!-- responsive class=img-fluid// object-fit-cover que se ajuste sin emborronarse//w-100 aseguro que ocupe el 100% del conteedor-->
+                        <img style="height:30vw; object-fit: cover"; src="https://psicologiamonzo.com/wp-content/uploads/2019/03/multiracial-grupo-joven-gente-toma-selfie_1139-1032.jpg" class="img-fluid w-100" alt="Perro">
+                    </div>
+                    <div class="col-4" p-1>
+                        <!-- responsive class=img-fluid// object-fit-cover que se ajuste sin emborronarse//w-100 aseguro que ocupe el 100% del conteedor-->
+                        <img style="height:30vw; object-fit: cover"; src="https://justitalia.es/wp-content/uploads/2020/04/cinque-terre.jpg" class="img-fluid w-100" alt="Perro">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4" p-1>
+                        <!-- responsive class=img-fluid// object-fit-cover que se ajuste sin emborronarse//w-100 aseguro que ocupe el 100% del conteedor-->
+                        <img style="height:30vw; object-fit: cover"; src="https://plus.unsplash.com/premium_photo-1683140621573-233422bfc7f1?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bXVqZXIlMjBuZWdyYSUyMHNvbnJpZW5kb3xlbnwwfHwwfHx8MA%3D%3D" class="img-fluid w-100" alt="Perro">
+                    </div>
+                    <div class="col-4" p-1>
+                        <img style="height: 30vw; object-fit: cover"; src="https://parispasoapasotour2183a.zapwp.com/q:i/r:0/wp:1/w:480/u:https://parispasoapasotours.com/wp-content/uploads/2022/12/tour-paris-nocturno.jpg" class="img-fluid w-100" alt="">
+                    </div>
+                    <div class=" col-4 p-1">
+                        <img style="height: 30vw; object-fit: cover"; src="https://c.files.bbci.co.uk/10413/production/_100697566_hi045932006.jpg" class="img-fluid w-100">
+                    </div>
+                </div>
+                <div class="row">
+                   <div class="col-4 p-1">
+                        <img style="height: 30vw; object-fit: cover"; src="https://img.freepik.com/foto-gratis/familia-india-tipica-comiendo-juntos_123827-29560.jpg" class="img-fluid w-100">
+                   </div>
+                   <div class="col-4 p-1">
+                        <img style="height: 30vw; object-fit: cover"; src="https://www.pontia.tech/wp-content/uploads/2023/05/python.webp" class="img-fluid w-100">
+                   </div>
+                   <div class="col-4 p-1">
+                        <img style="height: 30vw; object-fit: cover"; src="https://img.freepik.com/foto-gratis/ninos-volviendo-juntos-escuela_23-2149507625.jpg?t=st=1741280765~exp=1741284365~hmac=caa1c329aec0599617a5ba043332338564355d891d3396cc76a44003a45450be&w=1060"
+                        class="img-fluid w-100">
+                   </div>
+                </div>
+            </div>
+            <div class="tab-pane fade show active overflow-hidden" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <div class="row">
+                    <div class="col-6 mx-auto border p-0">
+                        <div class:d-flex p-2>
+                            <div class="w-100 fs-4">Mi Perro</div>
+                            <h6 class="align-bottom">04/25</h6>
+                        </div>
+                            <img style="object-fit: cover;" src="https://cdn.sanity.io/images/5vm5yn1d/pro/5cb1f9400891d9da5a4926d7814bd1b89127ecba-1300x867.jpg?fm=webp&q=80" class="img-fluid w-100 col-12" alt=""/>
+                    
+                         <div class="p-3">
+                             <strong>200 Likes</strong>
+                             <p>Mi perro parece estar divirtiendose</p>
+                         </div>
+
+                </div>
+            </div>
+          </div>
+     
 
 
 
@@ -163,7 +157,8 @@
 
 
 
-    <!-- Bootstrap Functionalities link  -->
+
+    <!--Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
         crossorigin="anonymous"></script>
