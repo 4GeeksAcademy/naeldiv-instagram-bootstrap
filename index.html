@@ -6,35 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="styless.css">
     <title>Instagram</title>
     <script src="https://kit.fontawesome.com/072e5df971.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-
-    <nav class="navbar navbar-expand-lg  bg-light p-3">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <div class="d-flex w-100 d-flex justify-content-between">
-                <a class="navbar-brand m-2" href="#">
-                    <img src="https://img.freepik.com/vector-premium/logo-instagram_976174-11.jpg?semt=ais_hybrid"
-                        alt="" width="30" height="24" class="d-inline-block align-text-top">
-                    <span>Instagram</span>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            <img src="https://img.freepik.com/vector-premium/logo-instagram_976174-11.jpg?semt=ais_hybrid"
+                alt="icono instagram" width="35" height="35" class="d-inline-block align-text-top">
+            <a class="navbar-brand fs-4" href="#">Instagram</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse d-flex justify-content-between p-2" id="navbarSupportedContent">
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-success me-5 d-inline-block align-text-top"
-                        data-bs-toggle="modal" data-bs-target="#createPost">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                </ul>
+                <form class="d-flex me-5" role="search">
+                    <button type="button" class="btn btn-success me-5 " data-bs-toggle="modal"
+                        data-bs-target="#createPost">
                         Create a new post
                     </button>
-                    <div class="dropdown me-5">
+                    <li class="nav-item dropdown  list-unstyled">
                         <button class="btn btn-secondary me-5 dropdown-toggle" type="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            <img src="https://cdn-icons-png.flaticon.com/512/6063/6063673.png" alt="" width="30"
-                                height="24" class="d-inline-block align-text-top">
+                            <img src="https://cdn-icons-png.flaticon.com/512/6063/6063673.png" alt="" width="30" height="24"
+                                class="d-inline-block align-text-top">
                         </button>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Profile</a></li>
@@ -45,63 +44,11 @@
                             </li>
                             <li><a class="dropdown-item text-danger" href="#"> Log out</a></li>
                         </ul>
-                    </div>
-                </div>
+                    </li>
+                </form>
             </div>
-            </div>
-        </div>
-    
         </div>
     </nav>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <div class="d-flex w-100 d-flex justify-content-between">
-            <img src="https://img.freepik.com/vector-premium/logo-instagram_976174-11.jpg?semt=ais_hybrid" alt="" width="30"
-                height="24" class="d-inline-block align-text-top">
-            <a class="navbar-brand m-2" href="#">Instagram</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    
-                <div class="prueba d-flex justify-content-between p-2">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-    
-                        <li class="nav-item dropdown">
-                            <button class="nav btn btn-secondary  p-2 me-5 dropdown-toggle" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="https://cdn-icons-png.flaticon.com/512/6063/6063673.png" alt="" width="30"
-                                    height="24" class="d-inline-block align-text-top">
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Profile</a></li>
-                                <li><a class="dropdown-item" href="#">Accesibility</a></li>
-                                <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item text-danger" href="#"> Log out</a></li>
-    
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-    
-                        </li>
-                    </ul>
-                    <form class="d-flex justify-content-between p-2" role="search">
-                        <button type="button" class="btn btn-success me-5 d-inline-block align-text-top"
-                            data-bs-toggle="modal" data-bs-target="#createPost">
-                            Create a new post
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-        </div>
-    </nav>
-
-
 
     <div class="container-fluid p-2">
         <ul class="nav nav-pills justify-content-center" id="pills-tab" role="tablist">
@@ -122,55 +69,57 @@
             <div class="tab-pane fade  overflow-hidden" id="pills-home" role="tabpanel"
                 aria-labelledby="pills-home-tab">
                 <div class="row">
-                    <div class="col-lg-4 p-1 col-8 m-auto ">
+                    <div class="col-lg-4 p-1 col-8 m-auto  ">
                         <!-- responsive class=img-fluid// object-fit-cover que se ajuste sin emborronarse//w-100 aseguro que ocupe el 100% del conteedor-->
-                        <img  style="height:30vw"; src="https://fastly.picsum.photos/id/219/300/300.jpg?hmac=dmonesrXdE-9PMrYQcQn9va1iu5a_0p4wGyhw93QSSA"
+                        <img 
+                            src="https://fastly.picsum.photos/id/32/400/400.jpg?hmac=QyKPcU_C9dLLat_LHQnq5_FJlOJPGxo2okcvlCjXQYQ"
                             class=" w-100 object-fit-cover" alt="Perro">
                     </div>
-                    <div class="col-lg-4  col-8 responsive p-1">
+                    <div class="col-lg-4  col-8 m-auto p-1">
                         <!-- responsive class=img-fluid// object-fit-cover que se ajuste sin emborronarse//w-100 aseguro que ocupe el 100% del conteedor-->
-                        <img style="height:30vw; object-fit: cover" ;
-                            src="https://psicologiamonzo.com/wp-content/uploads/2019/03/multiracial-grupo-joven-gente-toma-selfie_1139-1032.jpg"
-                            class="img-fluid w-100 object-fit-cover" alt="Perro">
+                        <img 
+                            src="https://fastly.picsum.photos/id/864/400/400.jpg?hmac=cUOiZzc6stHqf-AA55Z9d55EsQCuf2MEt0oI6eCxxIU"
+                            class=" w-100 object-fit-cover" alt="Perro">
                     </div>
-                    <div class="col-lg-4  col-12 p-1">
+                    <div class="col-lg-4  col-8 p-1 m-auto ">
                         <!-- responsive class=img-fluid// object-fit-cover que se ajuste sin emborronarse//w-100 aseguro que ocupe el 100% del conteedor-->
-                        <img style="height:30vw; object-fit: cover" ;
-                            src="https://justitalia.es/wp-content/uploads/2020/04/cinque-terre.jpg"
+                        <img 
+                            src="https://fastly.picsum.photos/id/25/400/400.jpg?hmac=MkY3cBJnG1tOmA6enxnXte4asEQ3dhZzOPzVdyaf_BU"
                             class="img-fluid w-100 object-fit-cover" alt="Perro">
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4  col-12 p-1">
+                    <div class="col-lg-4  col-8 p-1 m-auto">
                         <!-- responsive class=img-fluid// object-fit-cover que se ajuste sin emborronarse//w-100 aseguro que ocupe el 100% del conteedor-->
-                        <img style="height:30vw" ; ;
-                            src="https://plus.unsplash.com/premium_photo-1683140621573-233422bfc7f1?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bXVqZXIlMjBuZWdyYSUyMHNvbnJpZW5kb3xlbnwwfHwwfHx8MA%3D%3D"
+                        <img 
+                            src="https://fastly.picsum.photos/id/694/400/400.jpg?hmac=giLKsWSERk1VolJLVdlDSWa2pDdPHUzSB0Zrb7qa_2I"
                             class="img-fluid w-100 object-fit-cover" alt="Perro">
                     </div>
-                    <div class="col-lg-4  col-12 p-1">
-                        <img style="height: 30vw" ;
-                            src="https://parispasoapasotour2183a.zapwp.com/q:i/r:0/wp:1/w:480/u:https://parispasoapasotours.com/wp-content/uploads/2022/12/tour-paris-nocturno.jpg"
+                    <div class="col-lg-4  col-8 p-1 m-auto">
+                        <img 
+                            src="https://fastly.picsum.photos/id/676/400/400.jpg?hmac=gLQIVDp29YaNlH_3cmFTwlcgxKMpHDUIURuY4d6N3jY"
                             class="img-fluid w-100 object-fit-cover" alt="">
                     </div>
-                    <div class=" col-lg-4 col-12 p-1">
-                        <img style="height: 30vw" ;
-                            src="https://c.files.bbci.co.uk/10413/production/_100697566_hi045932006.jpg"
+                    <div class=" col-lg-4 col-8 p-1 m-auto">
+                        <img 
+                            src="https://fastly.picsum.photos/id/871/400/400.jpg?hmac=2DvXsmLSHy27AnVwE2ceSGeY7SmL9gg-WYgEckt8fCQ"
                             class="img-fluid w-100 object-fit-cover">
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4  col-12 p-1">
-                        <img style="height: 30vw" ;
-                            src="https://img.freepik.com/foto-gratis/familia-india-tipica-comiendo-juntos_123827-29560.jpg"
+                    <div class="col-lg-4  col-8 p-1 m-auto">
+                        <img 
+                            src="https://fastly.picsum.photos/id/992/400/400.jpg?hmac=lF_CZPhHNLZVVdFMqHtJvVDPjAlbfVaC2tnrYcy6vS4"
                             class="img-fluid w-100 object-fit-cover">
                     </div>
-                    <div class="col-lg-4  col-12 p-1">
-                        <img style="height: 30vw" ; src="https://www.pontia.tech/wp-content/uploads/2023/05/python.webp"
+                    <div class="col-lg-4  col-8 p-1 m-auto">
+                        <img 
+                        src="https://fastly.picsum.photos/id/991/400/400.jpg?hmac=CdAl88_Ow4zD4HP4K6Mxjp6eBDeh47kghesJlHJH1nQ"
                             class="img-fluid w-100 object-fit-cover">
                     </div>
-                    <div class="col-lg-4  col-12 p-1">
-                        <img style="height: 30vw" ;
-                            src="https://img.freepik.com/foto-gratis/ninos-volviendo-juntos-escuela_23-2149507625.jpg?t=st=1741280765~exp=1741284365~hmac=caa1c329aec0599617a5ba043332338564355d891d3396cc76a44003a45450be&w=1060"
+                    <div class="col-lg-4  col-8 p-1 m-auto">
+                        <img 
+                            src="https://fastly.picsum.photos/id/521/400/400.jpg?hmac=AXwbsOVgMvJJ4Z6_j8yjLGZIeR9PjvgMz4ktuQ6gA90"
                             class="img-fluid w-100 object-fit-cover">
                     </div>
                 </div>
@@ -180,42 +129,58 @@
             <div class="tab-pane fade show active overflow-hidden" id="pills-profile" role="tabpanel"
                 aria-labelledby="pills-profile-tab">
                 <div class="row p-2 m-2">
-                    <div class="col-6 mx-auto border p-0">
-                        <div class="d-flex p-2">
-                            <div class="w-100 fs-4">Mi Perro</div>
+                    <div class="col-6 mx-auto  rounded border p-0">
+                        <div class="d-flex flex-column flex-lg-row p-2">
+                            <div class="w-100 fs-4"><strong>Mi Perro</strong> </div>
                             <h5 class="text-center m-1">04/25</h5>
                         </div>
                         <img style="object-fit: cover;"
                             src="https://cdn.sanity.io/images/5vm5yn1d/pro/5cb1f9400891d9da5a4926d7814bd1b89127ecba-1300x867.jpg?fm=webp&q=80"
                             class="img-fluid w-100 col-12" alt="" />
-
+            
                         <div class="p-3">
                             <strong>200 Likes</strong>
                             <p>Mi perro parece estar divirtiendose #Doggg #BestFriend</p>
                         </div>
-
-
                     </div>
                 </div>
+            
                 <div class="row p-2 m-2">
-                    <div class="col-6 mx-auto border p-0">
-                        <div class="d-flex p-2">
-                            <div class="w-100 fs-4 ">Cumpleaños de Marta</div>
+                    <div class="col-6 mx-auto  rounded border p-0">
+                        <div class="d-flex flex-column flex-lg-row p-2">
+                            <div class="w-100 fs-4"><strong>La cantera con 6 champions!</strong> </div>
+                            <h5 class="text-center m-1">04/25</h5>
+                        </div>
+                        <img style="object-fit: cover;"
+                            src="https://images.daznservices.com/di/library/DAZN_News/eb/d8/nacho-real-madrid-champions-league_1minand9jvk3v1umzmaxtoq00a.jpg?t=1365173488"
+                            class="img-fluid w-100 col-12" alt="" />
+            
+                        <div class="p-3">
+                            <strong>123213231 Likes</strong>
+                            <p>Mi capitan desde chiquitito!! #15</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="row p-2 m-2">
+                    <div class="col-6 mx-auto  rounded border p-0">
+                        <div class="d-flex flex-column flex-lg-row p-2">
+                            <div class="w-100 fs-4"><strong>Con amigoss!!!</strong> </div>
                             <h5 class="text-center m-1">04/25</h5>
                         </div>
                         <img style="object-fit: cover;"
                             src="https://psicologiamonzo.com/wp-content/uploads/2019/03/multiracial-grupo-joven-gente-toma-selfie_1139-1032.jpg"
                             class="img-fluid w-100 col-12" alt="" />
-
+                
                         <div class="p-3">
                             <strong>120039 Likes</strong>
-                            <p>Celbrar el cumpleaños con amigos es lo mejor!!!!#BestFriend #happy</p>
+                            <p>Celbrar el cumpleaños con amigos es lo mejor! #BestFriend #happy</p>
                         </div>
-
-
+                
+                
                     </div>
+                
                 </div>
-            </div>
 
 
             <!-- Modal -->
@@ -234,10 +199,12 @@
                                     style="height: 100px"></textarea>
                                 <label for="floatingTextarea2">Add the caption of your post here</label>
                             </div>
-                            <img src="https://media.istockphoto.com/id/1440837734/es/vector/d%C3%ADa-mundial-de-la-fotograf%C3%ADa-icono-del-%C3%A1lbum-de-fotos-icono-negro-de-la-c%C3%A1mara-de-fotograf%C3%ADa.jpg?s=612x612&w=0&k=20&c=PvglSPIDWCXPF0KiWOPr2TPcYbTWVeUL3lmhhTwO1Qc="
-                                alt="" width="30" height="24" class="d-inline-block align-text-top">
-                            <img src="https://cdn-icons-png.flaticon.com/512/535/535188.png" alt="" width="30"
-                                height="24" class="d-inline-block align-text-top">
+                             <button class="col-1 border rounded p-1 m-1 btn-light">
+                            <i class="fa-solid fa-camera"></i>
+                        </button>
+                        <button class="col-1 border rounded p-1 m-1 btn-light">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </button>
 
                         </div>
                         <div class="modal-footer">
@@ -249,20 +216,20 @@
             </div>
         </div>
     </div>
-    
 
 
 
 
 
 
-            <!--Bootstrap-->
-            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-                integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-                crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-                integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-                crossorigin="anonymous"></script>
+
+    <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
 </body>
 
 
